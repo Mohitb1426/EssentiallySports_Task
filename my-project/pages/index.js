@@ -42,12 +42,12 @@ export default function Home({ articles }) {
       <div className={styles.dividerLine} />
       <ul className={styles.articles}>
         {filteredArticles?.map((article) => (
-          <li key={article.guid}>
-            <a href={article.link} target="_blank">
-              <Image src={newsDummyImage} />
-              <p src={newsDummyImage} alt={article.title} />
-              <h2>{article.title}</h2>
-              <p>{article.pubDate}</p>
+          <li key={article?.guid}>
+            <a href={article?.link} target="_blank">
+              <Image src={article?.image || newsDummyImage} />
+              <p src={newsDummyImage} alt={article?.title} />
+              <h2>{article?.title}</h2>
+              <p>{article?.pubDate}</p>
             </a>
             <div className={styles.dividerLine} />
           </li>
