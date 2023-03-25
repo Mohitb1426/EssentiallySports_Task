@@ -6,7 +6,6 @@ function Header() {
     return (
         <div className="header">
             <Image src={headerLogo} />
-            <div className="header__menuItem">Contact us : @essentiallysports.com</div>
         </div>
     );
 }
